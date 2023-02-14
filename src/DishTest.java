@@ -11,6 +11,13 @@ public class DishTest {
         dish2.wouldRecommend = true;
 
         dish1.printSummary();
+        DishTools.analyzeDishCost(dish1);
+        DishTools.shoutDishName(dish1);
+        DishTools.flipRecommendation(dish1);
+        dish1.printSummary();
         dish2.printSummary();
+        DishTools.analyzeDishCost(dish2);
+        DishTools.shoutDishName(dish2);
     }
+
 }
