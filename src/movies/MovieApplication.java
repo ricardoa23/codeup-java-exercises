@@ -3,9 +3,9 @@ import util.Input;
 public class MovieApplication {
 
 
-    public static String showCategory(String input) {
-
-    }
+//    public static String showCategory(String input) {
+//
+//    }
 
     public static void main(String[] args) {
         System.out.println("What do you want to do\n");
@@ -18,7 +18,7 @@ public class MovieApplication {
         System.out.println("Enter your choice:");
         Input userInput = new Input();
 
-        userinput = userInput
+//        userinput = userInput
 
 
 

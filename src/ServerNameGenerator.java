@@ -1,8 +1,10 @@
 public class ServerNameGenerator {
 
     public static String randomElement(String[] array) {
-        double randomizer = Math.floor(Math.random() * (array.length - 1));
-        int i = (int) randomizer;
+//        double randomizer = Math.floor(Math.random() * (array.length - 1));
+//        int i = (int) randomizer;
+        // Cleaner way of doing the same thing above
+        int i = (int) (Math.random() * (array.length - 1));
         return array[i];
     }
 
@@ -13,7 +15,7 @@ public class ServerNameGenerator {
 
         String testNoun = randomElement(nouns);
         String testAdjective = randomElement(adjectives);
-        System.out.printf("Here is your server name:\n%s-%s", testAdjective, testNoun);
+        System.out.printf("Here is your server name:\n%s - %s", testAdjective, testNoun);
     }
 
 
