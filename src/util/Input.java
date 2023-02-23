@@ -36,9 +36,13 @@ public boolean yesNo() {
 //
 public int getInt(int min, int max){
     int input = Integer.parseInt(this.getString());
-    while (input < min || input > max) {
-        System.out.printf("please enter a number between %d and %d\n", min, max);
-        input = Integer.parseInt(this.getString());
+    try {
+        while (input < min || input > max) {
+            System.out.printf("please enter a number between %d and %d\n", min, max);
+            input = Integer.parseInt(this.getString());
+        }
+    } catch (NumberFormatException nfx) {
+        System.out.println("Exception caught: " + nfx.getMessage());
     }
     return input;
 }
@@ -50,9 +54,13 @@ public int getInt() {
 
 public double getDouble(double min, double max){
     double input = Double.parseDouble(this.getString());
-    while (input < min || input > max) {
-        System.out.printf("please enter a number between %f and %f\n", min, max);
-        input = Double.parseDouble(this.getString());
+    try {
+            while (input < min || input > max) {
+                System.out.printf("please enter a number between %f and %f\n", min, max);
+                input = Double.parseDouble(this.getString());
+            }
+        } catch (NumberFormatException nfx) {
+        System.out.println("Exception caught: " + nfx.getMessage());
     }
     return input;
 }

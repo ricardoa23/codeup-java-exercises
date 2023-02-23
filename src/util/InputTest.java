@@ -13,7 +13,7 @@ public class InputTest {
 //        System.out.println(test.yesNo());
 //        System.out.println(test.getInt(1, 10));
 //        System.out.println(test.getInt());
-//        System.out.println(test.getDouble(0.0001, 1));
+        System.out.println(test.getDouble(0.0001, 1));
 //        System.out.println(test.getDouble());
 
 
