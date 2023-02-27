@@ -60,7 +60,7 @@ public double getDouble(double min, double max){
                 input = Double.parseDouble(this.getString());
             }
         } catch (NumberFormatException nfx) {
-        System.out.println("Exception caught: " + nfx.getMessage());
+        System.out.println("Exception caught: " + nfx);
     }
     return input;
 }

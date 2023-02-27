@@ -101,9 +101,9 @@ public class MethodsExercises {
 //        System.out.println(modulus(16, 3));
 //        System.out.println(weirdMultiplication(5, 4));
 //        System.out.println("Please enter a number between 1 and 10: ");
-//        int userInput = getInteger(1, 10);
+        int userInput = getInteger(1, 10);
 //        System.out.printf("%d is within the range", userInput);
-//        factorial();
+        factorial();
 //        rollDice();
 
 
